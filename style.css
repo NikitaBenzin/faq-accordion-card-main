@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  font-size: 0.75rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+h1 {
+  color: hsl(238deg, 29%, 16%);
+  font-size: 2rem;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+}
+main .container {
+  min-width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+main .container .card {
+  min-width: 90%;
+  background-color: hsl(240deg, 5%, 91%);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 2rem 0;
+  position: relative;
+  height: 30rem;
+  box-shadow: 0px 17px 35px -10px rgb(66, 68, 90);
+}
+main .container .card .card-image {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+main .container .card .card-image .box {
+  display: none;
+}
+main .container .card .card-image .card-image-women {
+  width: 80%;
+  position: absolute;
+  top: -7rem;
+  right: 2.1rem;
+}
+main .container .card .card-image .card-image-women .pattern {
+  position: absolute;
+  width: 100%;
+  top: 7rem;
+  right: 0.1rem;
+}
+main .container .card .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+main .container .card .card-info .card-header {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
+main .container .card .card-info .card-list {
+  width: 100%;
+  margin-bottom: 4rem;
+  height: 12rem;
+}
+main .container .card .card-info .card-list ul {
+  list-style: none;
+}
+main .container .card .card-info .card-list ul .element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+main .container .card .card-info .card-list ul .element h2 {
+  font-size: 0.875rem;
+  color: hsl(237deg, 12%, 33%);
+  font-weight: 400;
+  cursor: pointer;
+}
+main .container .card .card-info .card-list ul .element img {
+  width: 1rem;
+  height: 0.625rem;
+  cursor: pointer;
+}
+main .container .card .card-info .card-list ul .element-info p {
+  color: hsl(240deg, 6%, 50%);
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 480px) {
+  main .container .card .card-image .card-image-women {
+    width: 70%;
+    position: absolute;
+    top: -9rem;
+    right: 4rem;
+  }
+  main .container .card .card-image .card-image-women .pattern {
+    top: 9rem;
+  }
+}
+@media (min-width: 600px) {
+  main .container .card .card-image .card-image-women {
+    top: -12rem;
+    right: 6rem;
+  }
+  main .container .card .card-image .card-image-women .pattern {
+    top: 10rem;
+  }
+}
+@media (min-width: 650px) {
+  main .container .card .card-image .card-image-women {
+    width: 60%;
+    top: -12rem;
+    right: 8rem;
+  }
+}
+@media (min-width: 750px) {
+  main .container .card .card-image .card-image-women {
+    width: 50%;
+    top: -12rem;
+    right: 11rem;
+  }
+}
+@media (min-width: 920px) {
+  main .container .card {
+    min-width: 60%;
+  }
+  main .container .card .card-image .card-image-women {
+    top: -7rem;
+    right: 9rem;
+  }
+  main .container .card .card-image .card-image-women .pattern {
+    top: 7rem;
+  }
+}
+@media (min-width: 920px) {
+  main .container .card .card-image .card-image-women {
+    top: -10rem;
+    right: 10rem;
+  }
+}
+@media (min-width: 1260px) {
+  main .container .card {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    min-width: 65%;
+    position: relative;
+  }
+  main .container .card .card-image {
+    width: auto;
+  }
+  main .container .card .card-image .card-image-women {
+    display: none;
+  }
+  main .container .card .card-image .box {
+    display: block;
+    position: absolute;
+    top: 2.5rem;
+    right: 3.8rem;
+  }
+  main .container .card .card-image .box .box-image {
+    position: absolute;
+    top: 8rem;
+    left: -2rem;
+    z-index: 100;
+  }
+  main .container .card .card-image .box .womenDesktop {
+    position: absolute;
+  }
+  main .container .card .card-info {
+    max-width: 50%;
+    padding: 0 3rem 0 1rem;
+  }
+}
+.width90 {
+  max-width: 90%;
+}
+
+.width100 {
+  max-width: 100%;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
